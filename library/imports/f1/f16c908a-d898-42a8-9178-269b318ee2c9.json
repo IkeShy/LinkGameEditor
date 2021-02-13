@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lc_game_sweets_yellow",
+    "texture": "0d09e459-bf31-427d-827b-d3d18403a91c",
+    "atlas": "",
+    "rect": [
+      4,
+      7,
+      150,
+      148
+    ],
+    "offset": [
+      -1,
+      -1
+    ],
+    "originalSize": [
+      160,
+      160
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

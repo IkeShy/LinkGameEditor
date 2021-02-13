@@ -1,0 +1,1 @@
+{"version":3,"sources":["lc_string_constant.js"],"names":["window","lc","String"],"mappings":";;;;;;AAAA;;;;;;AAOAA,OAAOC,EAAP,GAAYD,OAAOC,EAAP,IAAa,EAAzB;;AAEAA,GAAGC,MAAH,GAAY,EAAZ","file":"lc_string_constant.js","sourceRoot":"../../../../../../assets/lcGame/scripts/utils","sourcesContent":["/**\n *\n * 内容:\n *\n */\n\n\nwindow.lc = window.lc || {};\n\nlc.String = {\n\n};"]}

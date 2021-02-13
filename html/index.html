@@ -1,0 +1,103 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<script type="text/javascript" src="//cstaticdun.126.net/load.min.js"></script>
+	</head>
+	<body scroll=no>
+		<div id="captcha" style="position:absolute; bottom:0; right:0;">
+		</div>
+
+		<dev>
+        	<input type="button" value="触发" onclick="onClick()"/>
+    	</dev>
+    	<dev>
+        	<input type="text" id="example" value=""></input>
+        </dev>
+		<script>
+			// window.addEventListener('message',function(e){
+	  //           if (e.data == "EVT_CAPTCHA_FRESH")
+	  //           {
+	  //           	freshCaptcha();
+	  //           }
+	  //       },false);
+			let plt_os = "android"; // plt_os = "android"->安卓系统， plt_os = "ios"->苹果系统
+
+			function onClick () {
+	        	// 其中一个设置URL方案
+	        	if(plt_os == "android"){
+					document.location = "testkey://a=0&b=1";
+	        	}else{
+					document.location = "testkey://{a:0,b:1}";
+	        	}
+	    	}
+
+	    	onTest = function(str){
+	    		document.getElementById("example").value=str;
+	    	}
+
+	    	onSystemPlt = function(str){
+	    		plt_os = str;
+	    	}
+
+
+	        /*function GetQueryString(name) {
+			   var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+			   var r = window.location.search.substr(1).match(reg);
+			   if (r != null) return unescape(r[2]); return null;
+			}
+			function freshCaptcha(aLang) {
+				if (aLang == null)
+				{
+					aLang = 'en';
+				}
+				initNECaptcha({
+		            captchaId: "b7170f2a6dc04b01abd69cb6d3ce7b78",
+		            element: '#captcha',
+		            mode: 'embed',
+		            width: 250,
+		            lang: aLang,
+		            onReady: function (instance) {
+		                // 验证码一切准备就绪，此时可正常使用验证码的相关功能
+		                //cc.log("Captcha ready!");
+		            },
+		            onVerify: function (err, data) {
+		            	var info = {};
+		                if (err == null)
+		                {
+		                    // 验证码通过
+		                    var info = {
+		                    	"EventName" : "EVT_CAPTCHA_VERIFY_TRUE",
+		                    	"EventContent" : data
+		                    }
+		                }
+		                else
+		                {
+		                	var info = {
+		                    	"EventName" : "EVT_CAPTCHA_VERIFY_FALSE"
+		                    }
+		                    //cc.log("验证未通过！" + err);
+		                }
+		                window.parent.postMessage(info, "*");
+		            }
+		        }, 
+		        function onload (instance) {
+		            // 初始化成功后，用户输入对应用户名和密码，以及完成验证后，直接点击登录按钮即可
+		            //cc.log("Captcha init success!");
+		            var info = {
+		                    	"EventName" : "EVT_CAPTCHA_LOAD_TRUE"
+		                    }
+		            window.parent.postMessage(info, "*");
+		        }, 
+		        function onerror (err) {
+		            // 验证码初始化失败处理逻辑，例如：提示用户点击按钮重新初始化
+		            //cc.log("Captcha init failed!");
+		            var info = {
+		                    	"EventName" : "EVT_CAPTCHA_LOAD_FALSE"
+		                    }
+		            window.parent.postMessage(info, "*");
+		        });
+			}
+	        window.onload = freshCaptcha(GetQueryString("lang"));*/
+		</script>
+	</body>
+</html>

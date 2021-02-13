@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "tm_scorll_msg_bg",
+    "texture": "b87f582a-be9d-411a-b861-1a90ea5f21c6",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      610,
+      29
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      610,
+      29
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

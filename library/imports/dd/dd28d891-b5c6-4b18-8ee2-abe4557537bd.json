@@ -1,0 +1,746 @@
+{
+  "__type__": "cc.JsonAsset",
+  "_name": "level_1",
+  "_objFlags": 0,
+  "_native": "",
+  "json": [
+    [
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_leftBottom",
+            "lc_mapType_bottom"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_pink"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_left",
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_yellow"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_left",
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_green"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_left",
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_red"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_left",
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_blue"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_left",
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_pink"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_left",
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_yellow"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_leftTop",
+            "lc_mapType_top",
+            "lc_mapType_left",
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_green"
+        ]
+      }
+    ],
+    [
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_bottom"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_red"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_blue"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_pink"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_yellow"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_green"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_red"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_blue"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_top",
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_pink"
+        ]
+      }
+    ],
+    [
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_bottom"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_yellow"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_green"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_red"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_blue"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_pink"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_yellow"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_green"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_top",
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_red"
+        ]
+      }
+    ],
+    [
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_bottom"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_blue"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_pink"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_yellow"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_green"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_red"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_blue"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_pink"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_top",
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_yellow"
+        ]
+      }
+    ],
+    [
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_bottom"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_green"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_red"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_blue"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_pink"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_yellow"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_green"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_red"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_top",
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_blue"
+        ]
+      }
+    ],
+    [
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_bottom"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_pink"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_yellow"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_green"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_red"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_blue"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_pink"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_yellow"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_top",
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_green"
+        ]
+      }
+    ],
+    [
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_bottom"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_red"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_blue"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_pink"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_yellow"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_green"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_red"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_blue"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_top",
+            "lc_mapType_rightBottomGap"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_pink"
+        ]
+      }
+    ],
+    [
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightBottom"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_yellow",
+          "lc_hinderType_Box"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_right"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_green"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_right"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_red"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_right"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_blue"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_right"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_pink"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_right"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_yellow"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_right"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_green"
+        ]
+      },
+      {
+        "isOpen": true,
+        "map": {
+          "type": [
+            "lc_mapType_rightTop",
+            "lc_mapType_right"
+          ]
+        },
+        "container": [
+          "lc_sweetsType_red"
+        ]
+      }
+    ]
+  ]
+}

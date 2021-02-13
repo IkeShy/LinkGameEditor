@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "map_gap",
+    "texture": "b077c354-9cfe-4fad-88e9-cc6786684fe8",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      82,
+      82
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      82,
+      82
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

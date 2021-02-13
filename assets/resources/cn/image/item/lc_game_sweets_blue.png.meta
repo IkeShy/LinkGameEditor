@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "0c0ec0c3-8c94-43f8-82cc-ec9a2a074824",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "lc_game_sweets_blue": {
+      "ver": "1.0.3",
+      "uuid": "31c52200-652d-49eb-91a5-54cadb0fcd1c",
+      "rawTextureUuid": "0c0ec0c3-8c94-43f8-82cc-ec9a2a074824",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": 4,
+      "trimX": 3,
+      "trimY": 4,
+      "width": 155,
+      "height": 144,
+      "rawWidth": 160,
+      "rawHeight": 160,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

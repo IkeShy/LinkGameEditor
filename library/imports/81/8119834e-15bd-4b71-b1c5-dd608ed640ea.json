@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lc_game_grid_bg",
+    "texture": "b52ed695-9ab8-482f-be01-6e0b598a5949",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      610,
+      635
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      610,
+      635
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
