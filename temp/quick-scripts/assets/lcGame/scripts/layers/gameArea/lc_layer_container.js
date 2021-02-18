@@ -234,6 +234,14 @@ cc.Class({
                 case lc.GameEnum.CrashToType.Down:
                     this._crashToDown(info);
                     break;
+
+                case lc.GameEnum.CrashToType.LeftUpAndRightDown:
+                    this._crashToLeftUpAndRightDown(info);
+                    break;
+
+                case lc.GameEnum.CrashToType.LeftDownAndRightUp:
+                    this._crashToLeftDownAndRightUp(info);
+                    break;
             }
 
             this._chanceLogic.onCrashedContainer();
@@ -312,6 +320,80 @@ cc.Class({
             if (this._containerList[logicX] && this._containerList[logicX][crashY]) {
                 var container = this._containerList[logicX][crashY];
                 this._chanceLogic.addCrashedContainer(container);
+            }
+        }
+    },
+
+
+    /**
+     * 左上右下
+     *   *
+     *     *
+     *       *
+     *         *
+     *
+     * @param info
+     * @private
+     */
+    _crashToLeftUpAndRightDown: function _crashToLeftUpAndRightDown(info) {
+        var logicX = info.x;
+        var logicY = info.y;
+        var count = info.count;
+
+        // 先搜索左上
+        for (var i = 1; i <= count; i++) {
+            var crashX = logicX - i;
+            var crashY = logicY + i;
+            if (this._containerList[crashX] && this._containerList[crashX][crashY]) {
+                var container = this._containerList[crashX][crashY];
+                this._chanceLogic.addCrashedContainer(container);
+            }
+        }
+
+        // 再搜索右下
+        for (var _i = 1; _i <= count; _i++) {
+            var _crashX = logicX + _i;
+            var _crashY = logicY - _i;
+            if (this._containerList[_crashX] && this._containerList[_crashX][_crashY]) {
+                var _container = this._containerList[_crashX][_crashY];
+                this._chanceLogic.addCrashedContainer(_container);
+            }
+        }
+    },
+
+
+    /**
+     * 左下右上
+     *         *
+     *       *
+     *     *
+     *   *
+     *
+     * @param info
+     * @private
+     */
+    _crashToLeftDownAndRightUp: function _crashToLeftDownAndRightUp(info) {
+        var logicX = info.x;
+        var logicY = info.y;
+        var count = info.count;
+
+        // 先搜索左下
+        for (var i = 1; i <= count; i++) {
+            var crashX = logicX - i;
+            var crashY = logicY - i;
+            if (this._containerList[crashX] && this._containerList[crashX][crashY]) {
+                var container = this._containerList[crashX][crashY];
+                this._chanceLogic.addCrashedContainer(container);
+            }
+        }
+
+        // 再搜索右上
+        for (var _i2 = 1; _i2 <= count; _i2++) {
+            var _crashX2 = logicX + _i2;
+            var _crashY2 = logicY + _i2;
+            if (this._containerList[_crashX2] && this._containerList[_crashX2][_crashY2]) {
+                var _container2 = this._containerList[_crashX2][_crashY2];
+                this._chanceLogic.addCrashedContainer(_container2);
             }
         }
     },

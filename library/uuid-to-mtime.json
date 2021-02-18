@@ -675,7 +675,7 @@
     "relativePath": "lcGame/edit/scripts/lc_sweets_select_ui.js"
   },
   "e7f09add-0097-44ab-8c5e-2300fb3f5651": {
-    "asset": 1574348119758,
+    "asset": 1613236241912,
     "meta": 1561748867366,
     "relativePath": "lcGame/scripts"
   },
@@ -720,7 +720,7 @@
     "relativePath": "lcGame/scripts/core"
   },
   "e3851263-d2e7-4928-b3a4-78b904a40487": {
-    "asset": 1613232185644,
+    "asset": 1613236536120,
     "meta": 1561748867373,
     "relativePath": "lcGame/scripts/items"
   },
@@ -745,7 +745,7 @@
     "relativePath": "lcGame/scripts/items/map"
   },
   "179bf4a7-e0f0-4372-acb9-815a63766163": {
-    "asset": 1613232185649,
+    "asset": 1613236599036,
     "meta": 1571844208626,
     "relativePath": "lcGame/scripts/items/sweets"
   },
@@ -760,7 +760,7 @@
     "relativePath": "lcGame/scripts/layers"
   },
   "34cbf1a8-35e0-4048-8afc-7299023bd5a9": {
-    "asset": 1613231475179,
+    "asset": 1613236568185,
     "meta": 1565016366832,
     "relativePath": "lcGame/scripts/layers/gameArea"
   },
@@ -865,7 +865,7 @@
     "relativePath": "lcGame/scripts/msgProtocol/lc_protocol_main.js"
   },
   "c9939eb3-4c26-4c75-9c03-8946e0b7c942": {
-    "asset": 1613231327638,
+    "asset": 1613236531866,
     "meta": 1561748867421,
     "relativePath": "lcGame/scripts/utils"
   },
@@ -940,7 +940,7 @@
     "relativePath": "lcGame/views/scene/lc_game_scene.fire"
   },
   "592dd1c7-bc36-4254-8e6f-56f8e385037b": {
-    "asset": 1576597818192,
+    "asset": 1613237201479,
     "meta": 1561748867485,
     "relativePath": "resources"
   },
@@ -1159,11 +1159,6 @@
     "meta": 1572190229504,
     "relativePath": "resources/cn/prefab/sweets"
   },
-  "16bbffda-5a07-41cf-9dea-28e9ebfee971": {
-    "asset": 1613236659524,
-    "meta": 1613236659531,
-    "relativePath": "resources/cn/prefab/sweets/lc_game_sweets_blue.prefab"
-  },
   "c68d36ce-6bc7-42f1-940a-88c0a49dc435": {
     "asset": 1613230958230,
     "meta": 1613230958237,
@@ -1249,25 +1244,10 @@
     "meta": 1613236247685,
     "relativePath": "lcGame/views/scene/lc_load_scene.fire"
   },
-  "f97dd930-eb01-4fce-8cda-5fa502af1a90": {
-    "asset": 1613226842597,
-    "meta": 1613227475837,
-    "relativePath": "lcGame/scripts/items/container/lc_game_container.js"
-  },
   "0d0f2743-a661-43e0-a0c1-a3503828cfc6": {
     "asset": 1613227234111,
     "meta": 1613227476052,
     "relativePath": "lcGame/scripts/items/hinder/lc_game_hinder_box.js"
-  },
-  "59cc561f-d9d7-45a6-b01e-4f63d0a7c275": {
-    "asset": 1613228297783,
-    "meta": 1613228345452,
-    "relativePath": "lcGame/scripts/compoent/lc_game_component_crashed.js"
-  },
-  "bf748a4c-a43b-474e-ae9f-4aa844eeb3d8": {
-    "asset": 1613228466485,
-    "meta": 1613228468640,
-    "relativePath": "lcGame/scripts/compoent/lc_game_component_beat.js"
   },
   "3fa9a7dd-4d56-42cd-a45c-379cb15fbe56": {
     "asset": 1613229522167,
@@ -1309,11 +1289,6 @@
     "meta": 1613232275799,
     "relativePath": "lcGame/scripts/compoent/lc_game_component_crash.js"
   },
-  "0af2533e-30c1-4d58-b806-6a7b15f0cce0": {
-    "asset": 1613236077486,
-    "meta": 1613236201567,
-    "relativePath": "lcGame/scripts/utils/lc_game_type.js"
-  },
   "b028d7a3-4cef-410e-a430-2d304d31dfa3": {
     "asset": 1613236241910,
     "meta": 1613236243540,
@@ -1324,19 +1299,44 @@
     "meta": 1613236539091,
     "relativePath": "lcGame/scripts/items/lc_game_item_base.js"
   },
-  "3e68b303-d0e0-42d3-bdf0-f58a547b8535": {
-    "asset": 1613236531865,
-    "meta": 1613236539091,
-    "relativePath": "lcGame/scripts/utils/lc_game_enum.js"
-  },
   "c2f4bc86-b8bc-4332-8f73-e927416edd25": {
     "asset": 1613236599035,
     "meta": 1613236602284,
     "relativePath": "lcGame/scripts/items/sweets/lc_game_sweets_blue.js"
   },
+  "bf748a4c-a43b-474e-ae9f-4aa844eeb3d8": {
+    "asset": 1613663435547,
+    "meta": 1613663632459,
+    "relativePath": "lcGame/scripts/compoent/lc_game_component_beat.js"
+  },
+  "59cc561f-d9d7-45a6-b01e-4f63d0a7c275": {
+    "asset": 1613663435541,
+    "meta": 1613663632657,
+    "relativePath": "lcGame/scripts/compoent/lc_game_component_crashed.js"
+  },
+  "16bbffda-5a07-41cf-9dea-28e9ebfee971": {
+    "asset": 1613664351826,
+    "meta": 1613664351833,
+    "relativePath": "resources/cn/prefab/sweets/lc_game_sweets_blue.prefab"
+  },
+  "f97dd930-eb01-4fce-8cda-5fa502af1a90": {
+    "asset": 1613663847611,
+    "meta": 1613663850058,
+    "relativePath": "lcGame/scripts/items/container/lc_game_container.js"
+  },
   "53e1cd26-ac91-4ec5-9d9b-5a0b7c35da46": {
-    "asset": 1613236568184,
-    "meta": 1613236602284,
+    "asset": 1613664295021,
+    "meta": 1613664296749,
     "relativePath": "lcGame/scripts/layers/gameArea/lc_layer_container.js"
+  },
+  "3e68b303-d0e0-42d3-bdf0-f58a547b8535": {
+    "asset": 1613664241267,
+    "meta": 1613664296752,
+    "relativePath": "lcGame/scripts/utils/lc_game_enum.js"
+  },
+  "0af2533e-30c1-4d58-b806-6a7b15f0cce0": {
+    "asset": 1613664346966,
+    "meta": 1613664351515,
+    "relativePath": "lcGame/scripts/utils/lc_game_type.js"
   }
 }

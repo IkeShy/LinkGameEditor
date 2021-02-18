@@ -339,6 +339,7 @@ lc.Container = cc.Class({
         if (last) {
             var logic = last.getComponent('lc_game_item_base');
             if (logic.onBeat()) {
+                this.onCrash();
                 this.onRemove();
             }
         }
@@ -357,8 +358,6 @@ lc.Container = cc.Class({
         if (last) {
             var logic = last.getComponent('lc_game_item_base');
             if (logic.onRemove()) {
-                this.onCrash();
-
                 last.destroy();
                 last = null;
 
@@ -395,9 +394,7 @@ lc.Container = cc.Class({
         if (last) {
             var logic = last.getComponent('lc_game_item_base');
             if (logic.onCrashed()) {
-                if (logic.onBeat()) {
-                    this.onRemove();
-                }
+                this.onRemove();
             }
         }
     }

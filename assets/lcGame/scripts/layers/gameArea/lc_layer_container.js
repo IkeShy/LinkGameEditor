@@ -231,6 +231,14 @@ cc.Class({
                 case lc.GameEnum.CrashToType.Down:
                     this._crashToDown(info);
                     break;
+
+                case lc.GameEnum.CrashToType.LeftUpAndRightDown:
+                    this._crashToLeftUpAndRightDown(info);
+                    break;
+
+                case lc.GameEnum.CrashToType.LeftDownAndRightUp:
+                    this._crashToLeftDownAndRightUp(info);
+                    break;
             }
 
             this._chanceLogic.onCrashedContainer();
@@ -304,6 +312,79 @@ cc.Class({
             let crashY = logicY - i;
             if (this._containerList[logicX] && this._containerList[logicX][crashY]) {
                 let container = this._containerList[logicX][crashY];
+                this._chanceLogic.addCrashedContainer(container);
+            }
+        }
+    },
+
+    /**
+     * 左上右下
+     *   *
+     *     *
+     *       *
+     *         *
+     *
+     * @param info
+     * @private
+     */
+    _crashToLeftUpAndRightDown (info) {
+        let logicX = info.x;
+        let logicY = info.y;
+        let count = info.count;
+
+        // 先搜索左上
+        for (let i = 1; i <= count; i++) {
+            let crashX = logicX - i;
+            let crashY = logicY + i;
+            if (this._containerList[crashX] && this._containerList[crashX][crashY]) {
+                let container = this._containerList[crashX][crashY];
+                this._chanceLogic.addCrashedContainer(container);
+            }
+        }
+
+        // 再搜索右下
+        for (let i = 1; i <= count; i++) {
+            let crashX = logicX + i;
+            let crashY = logicY - i;
+            if (this._containerList[crashX] && this._containerList[crashX][crashY]) {
+                let container = this._containerList[crashX][crashY];
+                this._chanceLogic.addCrashedContainer(container);
+            }
+        }
+    },
+
+
+    /**
+     * 左下右上
+     *         *
+     *       *
+     *     *
+     *   *
+     *
+     * @param info
+     * @private
+     */
+    _crashToLeftDownAndRightUp (info) {
+        let logicX = info.x;
+        let logicY = info.y;
+        let count = info.count;
+
+        // 先搜索左下
+        for (let i = 1; i <= count; i++) {
+            let crashX = logicX - i;
+            let crashY = logicY - i;
+            if (this._containerList[crashX] && this._containerList[crashX][crashY]) {
+                let container = this._containerList[crashX][crashY];
+                this._chanceLogic.addCrashedContainer(container);
+            }
+        }
+
+        // 再搜索右上
+        for (let i = 1; i <= count; i++) {
+            let crashX = logicX + i;
+            let crashY = logicY + i;
+            if (this._containerList[crashX] && this._containerList[crashX][crashY]) {
+                let container = this._containerList[crashX][crashY];
                 this._chanceLogic.addCrashedContainer(container);
             }
         }

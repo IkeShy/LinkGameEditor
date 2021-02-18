@@ -6,7 +6,7 @@ lc.ComponentBeat = cc.Class({
     extends: lc.ComponentBase,
 
     properties: {
-        _count: 0, // 受打击次数
+
     },
 
     ctor () {
@@ -16,7 +16,6 @@ lc.ComponentBeat = cc.Class({
     init () {
         if(this._item) {
             this.enabled = true;
-            this._count = this._item.beatCount;
         }
     },
 
@@ -25,8 +24,8 @@ lc.ComponentBeat = cc.Class({
         // 如果开启
         let flag = false;
         if(this.enabled) {
-            this._count--;
-            if(this._count <= 0) {
+            this._item.beatCount--;
+            if(this._item.beatCount <= 0) {
                 flag = true;
             }
         }

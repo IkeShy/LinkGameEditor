@@ -17,7 +17,7 @@ lc.GameEnum.CrashToType = cc.Enum({
     "Down" : 4,  // 下
 
     "LeftUpAndRightDown" : 5,  // 左上和右下
-    "RightUpAndLeftDown" : 6,  // 左下和右上
+    "LeftDownAndRightUp" : 6,  // 左下和右上
 
     "Row" : 7,  // 行
     "Vertical" : 8,  // 竖

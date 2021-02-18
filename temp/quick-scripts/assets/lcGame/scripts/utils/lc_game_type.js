@@ -16,24 +16,6 @@ lc.GameType = lc.GameType || {};
 
 lc.GameType = {};
 
-// 爆炸方向
-lc.GameType.CrashToType = {
-    "Invalid": "lc_itemType_CrashToType_invalid", // 无效
-    "Left": "lc_itemType_CrashToType_Left", // 左
-    "Right": "lc_itemType_CrashToType_Right", // 右
-    "Up": "lc_itemType_CrashToType_Up", // 上
-    "Down": "lc_itemType_CrashToType_Down", // 下
-
-    "LeftUpAndRightDown": "lc_itemType_CrashToType_LeftUpAndRightDown", // 左上和右下
-    "RightUpAndLeftDown": "lc_itemType_CrashToType_RightUpAndLeftDown", // 左下和右上
-
-    "Row": "lc_itemType_CrashToType_Row", // 行
-    "Vertical": "lc_itemType_CrashToType_Vertical", // 竖
-    "Cross": "lc_itemType_CrashToType_Cross", // 十字
-
-    "MiZi": "lc_itemType_CrashToType_MiZi" // 米字
-};
-
 // 元素类型
 lc.GameType.ItemType = {
     "Invalid": "lc_itemType_invalid", // 无效

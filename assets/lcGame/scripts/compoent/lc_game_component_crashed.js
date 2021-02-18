@@ -24,7 +24,10 @@ lc.ComponentCrashed = cc.Class({
         // 如果开启
         let flag = false;
         if(this.enabled) {
-            flag = true;
+            this._item.beatCount--;
+            if(this._item.beatCount <= 0) {
+                flag = true;
+            }
         }
 
         return flag;

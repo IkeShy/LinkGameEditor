@@ -11,9 +11,7 @@ window.lc = window.lc || {};
 lc.ComponentBeat = cc.Class({
     extends: lc.ComponentBase,
 
-    properties: {
-        _count: 0 // 受打击次数
-    },
+    properties: {},
 
     ctor: function ctor() {
         this.type = lc.GameType.ComType.Beat;
@@ -21,15 +19,14 @@ lc.ComponentBeat = cc.Class({
     init: function init() {
         if (this._item) {
             this.enabled = true;
-            this._count = this._item.beatCount;
         }
     },
     doLogic: function doLogic() {
         // 如果开启
         var flag = false;
         if (this.enabled) {
-            this._count--;
-            if (this._count <= 0) {
+            this._item.beatCount--;
+            if (this._item.beatCount <= 0) {
                 flag = true;
             }
         }
