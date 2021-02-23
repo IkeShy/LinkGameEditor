@@ -239,6 +239,23 @@ cc.Class({
                 case lc.GameEnum.CrashToType.LeftDownAndRightUp:
                     this._crashToLeftDownAndRightUp(info);
                     break;
+
+                case lc.GameEnum.CrashToType.Row:
+                    this._crashToRow(info);
+                    break;
+
+                case lc.GameEnum.CrashToType.Col:
+                    this._crashToCol(info);
+                    break;
+
+                case lc.GameEnum.CrashToType.Cross:
+                    this._crashToCross(info);
+                    break;
+
+                case lc.GameEnum.CrashToType.X:
+                    this._crashToX(info);
+                    break;
+
             }
 
             this._chanceLogic.onCrashedContainer();
@@ -389,6 +406,90 @@ cc.Class({
             }
         }
     },
+
+    /**
+     * 消灭一行
+     * @param info
+     * @private
+     */
+    _crashToRow (info) {
+        let logicX = info.x;
+        let logicY = info.y;
+        let count = info.count;
+
+        // 先搜索左
+        for (let i = 1; i <= count; i++) {
+            let crashX = logicX - i;
+            let crashY = logicY;
+            if (this._containerList[crashX] && this._containerList[crashX][crashY]) {
+                let container = this._containerList[crashX][crashY];
+                this._chanceLogic.addCrashedContainer(container);
+            }
+        }
+
+        // 再搜索右
+        for (let i = 1; i <= count; i++) {
+            let crashX = logicX + i;
+            let crashY = logicY;
+            if (this._containerList[crashX] && this._containerList[crashX][crashY]) {
+                let container = this._containerList[crashX][crashY];
+                this._chanceLogic.addCrashedContainer(container);
+            }
+        }
+    },
+
+    /**
+     * 消灭一列
+     * @param info
+     * @private
+     */
+    _crashToCol (info) {
+        let logicX = info.x;
+        let logicY = info.y;
+        let count = info.count;
+
+        // 先搜索下
+        for (let i = 1; i <= count; i++) {
+            let crashX = logicX;
+            let crashY = logicY - i;
+            if (this._containerList[crashX] && this._containerList[crashX][crashY]) {
+                let container = this._containerList[crashX][crashY];
+                this._chanceLogic.addCrashedContainer(container);
+            }
+        }
+
+        // 再搜索上
+        for (let i = 1; i <= count; i++) {
+            let crashX = logicX;
+            let crashY = logicY + i;
+            if (this._containerList[crashX] && this._containerList[crashX][crashY]) {
+                let container = this._containerList[crashX][crashY];
+                this._chanceLogic.addCrashedContainer(container);
+            }
+        }
+    },
+
+
+    /**
+     * 消灭十字
+     * @param info
+     * @private
+     */
+    _crashToCross (info) {
+        this._crashToCol(info);
+        this._crashToRow(info);
+    },
+
+    /**
+     * 消灭X字
+     * @param info
+     * @private
+     */
+    _crashToX (info) {
+        this._crashToLeftUpAndRightDown(info);
+        this._crashToLeftDownAndRightUp(info);
+    },
+
 
     /**
      * 获取当前被点击的元素

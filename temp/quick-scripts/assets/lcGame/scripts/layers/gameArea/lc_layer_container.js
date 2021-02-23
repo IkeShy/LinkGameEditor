@@ -242,6 +242,23 @@ cc.Class({
                 case lc.GameEnum.CrashToType.LeftDownAndRightUp:
                     this._crashToLeftDownAndRightUp(info);
                     break;
+
+                case lc.GameEnum.CrashToType.Row:
+                    this._crashToRow(info);
+                    break;
+
+                case lc.GameEnum.CrashToType.Col:
+                    this._crashToCol(info);
+                    break;
+
+                case lc.GameEnum.CrashToType.Cross:
+                    this._crashToCross(info);
+                    break;
+
+                case lc.GameEnum.CrashToType.X:
+                    this._crashToX(info);
+                    break;
+
             }
 
             this._chanceLogic.onCrashedContainer();
@@ -396,6 +413,92 @@ cc.Class({
                 this._chanceLogic.addCrashedContainer(_container2);
             }
         }
+    },
+
+
+    /**
+     * 消灭一行
+     * @param info
+     * @private
+     */
+    _crashToRow: function _crashToRow(info) {
+        var logicX = info.x;
+        var logicY = info.y;
+        var count = info.count;
+
+        // 先搜索左
+        for (var i = 1; i <= count; i++) {
+            var crashX = logicX - i;
+            var crashY = logicY;
+            if (this._containerList[crashX] && this._containerList[crashX][crashY]) {
+                var container = this._containerList[crashX][crashY];
+                this._chanceLogic.addCrashedContainer(container);
+            }
+        }
+
+        // 再搜索右
+        for (var _i3 = 1; _i3 <= count; _i3++) {
+            var _crashX3 = logicX + _i3;
+            var _crashY3 = logicY;
+            if (this._containerList[_crashX3] && this._containerList[_crashX3][_crashY3]) {
+                var _container3 = this._containerList[_crashX3][_crashY3];
+                this._chanceLogic.addCrashedContainer(_container3);
+            }
+        }
+    },
+
+
+    /**
+     * 消灭一列
+     * @param info
+     * @private
+     */
+    _crashToCol: function _crashToCol(info) {
+        var logicX = info.x;
+        var logicY = info.y;
+        var count = info.count;
+
+        // 先搜索下
+        for (var i = 1; i <= count; i++) {
+            var crashX = logicX;
+            var crashY = logicY - i;
+            if (this._containerList[crashX] && this._containerList[crashX][crashY]) {
+                var container = this._containerList[crashX][crashY];
+                this._chanceLogic.addCrashedContainer(container);
+            }
+        }
+
+        // 再搜索上
+        for (var _i4 = 1; _i4 <= count; _i4++) {
+            var _crashX4 = logicX;
+            var _crashY4 = logicY + _i4;
+            if (this._containerList[_crashX4] && this._containerList[_crashX4][_crashY4]) {
+                var _container4 = this._containerList[_crashX4][_crashY4];
+                this._chanceLogic.addCrashedContainer(_container4);
+            }
+        }
+    },
+
+
+    /**
+     * 消灭十字
+     * @param info
+     * @private
+     */
+    _crashToCross: function _crashToCross(info) {
+        this._crashToCol(info);
+        this._crashToRow(info);
+    },
+
+
+    /**
+     * 消灭X字
+     * @param info
+     * @private
+     */
+    _crashToX: function _crashToX(info) {
+        this._crashToLeftUpAndRightDown(info);
+        this._crashToLeftDownAndRightUp(info);
     },
 
 

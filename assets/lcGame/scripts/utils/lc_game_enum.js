@@ -20,8 +20,8 @@ lc.GameEnum.CrashToType = cc.Enum({
     "LeftDownAndRightUp" : 6,  // 左下和右上
 
     "Row" : 7,  // 行
-    "Vertical" : 8,  // 竖
+    "Col" : 8,  // 竖
     "Cross" : 9,  // 十字
 
-    "MiZi": 10 // 米字
+    "X": 10 // X字
 });
