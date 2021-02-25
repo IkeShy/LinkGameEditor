@@ -200,6 +200,17 @@ lc.Container = cc.Class({
         return type;
     },
 
+    getCurSweetsType () {
+        let type = null;
+        let last = this._itemList[this._itemList.length - 1];
+        if(last) {
+            let logic = last.getComponent('lc_game_sweets_base');
+            type = logic.SweetType;
+        }
+
+        return type;
+    },
+
     /**
      * 是否是同一类型
      * @param type
@@ -208,11 +219,15 @@ lc.Container = cc.Class({
     checkIsSameType (curr) {
         let flag = false;
         let cType = curr.getCurType();
-        let last = this._itemList[this._itemList.length - 1];
-
-        if(last) {
-            let logic = last.getComponent('lc_game_item_base');
-            flag = (cType == logic.ItemType);
+        if(cType == lc.GameType.ItemType.Sweets) {
+            let last = this._itemList[this._itemList.length - 1];
+            if(last) {
+                let cType = curr.getCurSweetsType();
+                let logic = last.getComponent('lc_game_item_base');
+                flag = (cType == logic.SweetType);
+            }
+        } else if (cType == lc.GameType.ItemType.Prop) {
+            flag = true;
         }
 
         return flag;

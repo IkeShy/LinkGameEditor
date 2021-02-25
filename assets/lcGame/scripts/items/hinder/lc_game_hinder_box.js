@@ -7,12 +7,20 @@ lc.HinderBox = cc.Class({
     extends: require("../lc_game_item_base"),
 
     properties: {
+        _hinderType: lc.GameType.HinderType.Box,
 
+        HinderType: {
+            visible: false,
+            get: function () {
+                return this._hinderType;  //  障碍物类型
+            }
+        },
     },
 
     ctor () {
         this._itemPriority = lc.GamePriority.HinderBox;
-        this._itemType =  lc.GameType.HinderType.Box;
+        this._itemType =  lc.GameType.ItemType.Hinder;
+        this._hinderType = lc.GameType.HinderType.Box;
     },
 
     onLoad () {

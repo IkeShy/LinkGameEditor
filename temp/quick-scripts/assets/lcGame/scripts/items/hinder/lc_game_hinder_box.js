@@ -12,11 +12,21 @@ window.lc = window.lc || {};
 lc.HinderBox = cc.Class({
     extends: require("../lc_game_item_base"),
 
-    properties: {},
+    properties: {
+        _hinderType: lc.GameType.HinderType.Box,
+
+        HinderType: {
+            visible: false,
+            get: function get() {
+                return this._hinderType; //  障碍物类型
+            }
+        }
+    },
 
     ctor: function ctor() {
         this._itemPriority = lc.GamePriority.HinderBox;
-        this._itemType = lc.GameType.HinderType.Box;
+        this._itemType = lc.GameType.ItemType.Hinder;
+        this._hinderType = lc.GameType.HinderType.Box;
     },
     onLoad: function onLoad() {
         this._super();

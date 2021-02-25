@@ -210,6 +210,16 @@ lc.Container = cc.Class({
 
         return type;
     },
+    getCurSweetsType: function getCurSweetsType() {
+        var type = null;
+        var last = this._itemList[this._itemList.length - 1];
+        if (last) {
+            var logic = last.getComponent('lc_game_sweets_base');
+            type = logic.SweetType;
+        }
+
+        return type;
+    },
 
 
     /**
@@ -220,11 +230,15 @@ lc.Container = cc.Class({
     checkIsSameType: function checkIsSameType(curr) {
         var flag = false;
         var cType = curr.getCurType();
-        var last = this._itemList[this._itemList.length - 1];
-
-        if (last) {
-            var logic = last.getComponent('lc_game_item_base');
-            flag = cType == logic.ItemType;
+        if (cType == lc.GameType.ItemType.Sweets) {
+            var last = this._itemList[this._itemList.length - 1];
+            if (last) {
+                var _cType = curr.getCurSweetsType();
+                var logic = last.getComponent('lc_game_item_base');
+                flag = _cType == logic.SweetType;
+            }
+        } else if (cType == lc.GameType.ItemType.Prop) {
+            flag = true;
         }
 
         return flag;

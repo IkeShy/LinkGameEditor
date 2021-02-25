@@ -41,7 +41,10 @@ lc.GameAsssetsMgr = cc.Class({
         { type: cc.Prefab, url: 'cn/prefab/maps/lc_game_map' },
 
         // 障碍物
-        { type: cc.Prefab, url: 'cn/prefab/hinder/lc_game_hinder_box' }];
+        { type: cc.Prefab, url: 'cn/prefab/hinder/lc_game_hinder_box' },
+
+        // 道具
+        { type: cc.Prefab, url: 'cn/prefab/prop/lc_game_prop_rocket' }];
     },
 
 

@@ -13,11 +13,19 @@ lc.SweetsBase = cc.Class({
     extends: lc.ItemBase,
 
     properties: {
+        SweetType: {
+            visible: false,
+            get: function get() {
+                return this._sweetType; // 糖果类型
+            }
+        }, // 物体类型
+
         beatCount: 1 // 受打击数量
     },
 
     ctor: function ctor() {
         this._itemPriority = lc.GamePriority.Sweets;
+        this._itemType = lc.GameType.ItemType.Sweets;
     },
     onLoad: function onLoad() {
         this._super();
@@ -27,8 +35,6 @@ lc.SweetsBase = cc.Class({
         this.addComByType(lc.GameType.ComType.Chance);
         this.addComByType(lc.GameType.ComType.Beat);
         this.addComByType(lc.GameType.ComType.Remove);
-        this.addComByType(lc.GameType.ComType.Crash);
-        this.addComByType(lc.GameType.ComType.Crashed);
     }
 });
 

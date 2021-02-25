@@ -14,7 +14,7 @@ lc.SweetsYellow = cc.Class({
     properties: {},
 
     ctor: function ctor() {
-        this._itemType = lc.GameType.SweetsType.Yellow;
+        this._sweetType = lc.GameType.SweetsType.Yellow;
     },
     onLoad: function onLoad() {
         this._super();

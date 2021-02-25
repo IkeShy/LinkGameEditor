@@ -10,7 +10,7 @@ lc.SweetsRed = cc.Class({
     },
 
     ctor () {
-        this._itemType = lc.GameType.SweetsType.Red;
+        this._sweetType = lc.GameType.SweetsType.Red;
     },
 
     onLoad () {

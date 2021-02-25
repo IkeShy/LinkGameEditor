@@ -14,13 +14,6 @@ lc.ItemBase = cc.Class({
     properties: {
         comNode: cc.Node, // 组件的节点
         spf: [cc.SpriteFrame], // 贴图
-        crashToType: { // 爆炸朝向
-            visible: true,
-            default: lc.GameEnum.CrashToType.Invalid,
-            type: lc.GameEnum.CrashToType
-        },
-
-        crashCount: 1, // 爆炸关联数量
 
         _comMap: null, // 组件列表
 

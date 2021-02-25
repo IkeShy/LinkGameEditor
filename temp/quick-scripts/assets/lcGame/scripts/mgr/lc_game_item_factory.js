@@ -37,6 +37,9 @@ lc.GameItemFactory = cc.Class({
 
         // 箱子
         this._itemFactory[lc.GameType.HinderType.Box] = lc.game.hinderFactory;
+
+        // 火箭道具
+        this._itemFactory[lc.GameType.PropType.Rocket] = lc.game.GamePropFactory;
     },
 
     /**

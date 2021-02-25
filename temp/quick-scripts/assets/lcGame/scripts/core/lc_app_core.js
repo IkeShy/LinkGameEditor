@@ -16,6 +16,7 @@ require("../mgr/lc_game_manage");
 require("../mgr/lc_game_assets_manager");
 require("../mgr/lc_game_compoent_factory");
 require("../mgr/lc_game_sweets_factory");
+require("../mgr/lc_game_prop_factory");
 require("../mgr/lc_game_item_factory");
 require("../mgr/lc_game_hinder_factory");
 require("../mgr/lc_game_map_manage");
@@ -98,6 +99,10 @@ lc.AppCore = cc.Class({
         // 障碍物工厂
         this.hinderFactory = new lc.GameHinderFactory();
         this.hinderFactory.init();
+
+        // 道具工厂
+        this.propFactory = new lc.GamePropFactory();
+        this.propFactory.init();
 
         // 对象工厂
         this.itemFactory = new lc.GameItemFactory();

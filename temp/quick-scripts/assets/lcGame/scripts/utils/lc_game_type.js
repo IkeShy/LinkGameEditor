@@ -54,6 +54,12 @@ lc.GameType.SweetsType = {
     "Red": "lc_sweetsType_red" // 粉色糖果
 };
 
+// 道具类型
+lc.GameType.PropType = {
+    "Invalid": "lc_propType_invalid", // 无效
+    "Rocket": "lc_propType_Rocket" // 火箭
+};
+
 // 地图类型
 lc.GameType.MapType = {
     "RightTop": "lc_mapType_rightTop", // 右上角

@@ -1,19 +1,20 @@
 /**
- * 游戏元素： 蓝色糖果
+ * 游戏元素： 道具火箭
  */
 window.lc = window.lc || {};
-lc.SweetsBlue = cc.Class({
-    extends: lc.SweetsBase,
+lc.PropRokect = cc.Class({
+    extends: lc.PropBase,
 
     properties: {
+
     },
 
     ctor () {
-        this._sweetType = lc.GameType.SweetsType.Blue;
+        this._propType = lc.GameType.PropType.Rocket;
     },
 
     onLoad () {
-       this._super();
+        this._super();
     },
 
     initUseCom () {

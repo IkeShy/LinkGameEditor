@@ -71,7 +71,7 @@
     "_id": ""
   },
   {
-    "__type__": "c2f4byGuLxDMo9z6SdBbt0l",
+    "__type__": "3ce598aEcFHLIxkRaukA2LI",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -84,11 +84,12 @@
     },
     "spf": [
       {
-        "__uuid__": "31c52200-652d-49eb-91a5-54cadb0fcd1c"
+        "__uuid__": "fd3f9f1d-e8b0-4db7-8ff3-83042f731756"
       }
     ],
     "_comMap": null,
-    "beatCount": 1,
+    "crashToType": 9,
+    "crashCount": 1,
     "_id": ""
   },
   {
@@ -97,7 +98,7 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "16bbffda-5a07-41cf-9dea-28e9ebfee971"
+      "__uuid__": "7b374f80-bc42-4d9e-8fac-622065bfe09f"
     },
     "fileId": "0cRtleAZxK/LaswhirZBCa",
     "sync": false
